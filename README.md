@@ -13,12 +13,17 @@ Your second task is to build a forecasting model that would be alerting sailors 
 ### 1. Explore Data
 To do so, first the file called ```Data_Exploration.py``` contains all steps to explore the raw data before building any machine learning model.
 ### 2. Clean Data
-Next run ```data_cleaning.py``` to clean the raw data.
+Next run ```data_cleaning.py``` to clean the raw data. For example, this could look as follows:
+``` python data_cleaning.py --dataset test_data.csv```
 ### 3. Select features to input to model
-Select the appropriate features to input into the model from ```select_features.py```. These features have been selected using the ```Feature_Engineering.ipynb```notebook.
+Select the appropriate features to input into the model from ```select_features.py```. These features have been selected using the ```Feature_Engineering.ipynb```notebook. For example, this could look as follows:
+```python select_features.py --features features_pps.json --dataset data/cleaned_data.csv```
 ### 4. Create input training and test data
-Use the file ```data_input_model.py``` to create the input data and split it into the test and train datasets
+Use the file ```data_input_model.py``` to create the input data and split it into the test and train datasets. For example, this could look as follows:
+```python data_input_model.py --dataset data/data_features_selected.csv --lookback 30 --horizon 30``` 
 ### 5. Train model
-Train the model by running ```model_train.py```
+Train the model by running ```model_train.py```. For example, this could look as follows:
+```python model_train.py --data_folder lb_30_hz_30 --model_name model_lb_30_hz_30_16x128_lr0001_drop1 --input_layer_size 16 --output_layer_size 128 --dropout 0.1```
 ### 6. Get predictions and evaluate results
-Obtain predictions and evaluate these results by running the ```evaluate_model.py``` code
+Obtain predictions and evaluate these results by running the ```evaluate_model.py``` code. For example, this could look as follows:
+```model_lb_30_hz_30_16x128_lr0001_drop1```
