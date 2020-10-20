@@ -10,3 +10,5 @@ Your supervisor told you that on top of whatever you come up with, what you shou
 
 Your second task is to build a forecasting model that would be alerting sailors of the tacking event happening ahead.
 ````
+To do so, first the file called ```data_exploration.py``` contains all steps to explore the raw data before building any machine learning model.
+Next
