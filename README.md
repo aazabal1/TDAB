@@ -10,5 +10,15 @@ Your supervisor told you that on top of whatever you come up with, what you shou
 
 Your second task is to build a forecasting model that would be alerting sailors of the tacking event happening ahead.
 ````
-To do so, first the file called ```data_exploration.py``` contains all steps to explore the raw data before building any machine learning model.
-Next
+### 1. Explore Data
+To do so, first the file called ```Data_Exploration.py``` contains all steps to explore the raw data before building any machine learning model.
+### 2. Clean Data
+Next run ```data_cleaning.py``` to clean the raw data.
+### 3. Select features to input to model
+Select the appropriate features to input into the model from ```select_features.py```. These features have been selected using the ```Feature_Engineering.ipynb```notebook.
+### 4. Create input training and test data
+Use the file ```data_input_model.py``` to create the input data and split it into the test and train datasets
+### 5. Train model
+Train the model by running ```model_train.py```
+### 6. Get predictions and evaluate results
+Obtain predictions and evaluate these results by running the ```evaluate_model.py``` code
